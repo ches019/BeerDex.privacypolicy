@@ -29,10 +29,12 @@
             border-radius: 16px;
             border: 1px solid rgba(239, 68, 68, 0.3);
             text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
         }
         h1 {
             color: var(--error-red);
             margin-top: 0;
+            font-size: 2rem;
         }
         p {
             margin-bottom: 20px;
@@ -52,10 +54,21 @@
         .steps {
             text-align: left;
             margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+        }
+        .steps h3 {
+            margin-top: 0;
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+        .steps ul {
             padding-left: 20px;
+            margin-bottom: 0;
         }
         .steps li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         .back-link {
             display: inline-block;
@@ -63,9 +76,15 @@
             color: var(--gold);
             text-decoration: none;
             font-size: 0.9rem;
+            transition: opacity 0.2s;
         }
         .back-link:hover {
+            opacity: 0.7;
             text-decoration: underline;
+        }
+        .important {
+            font-weight: bold;
+            color: white;
         }
     </style>
 </head>
@@ -73,25 +92,25 @@
 
     <div class="container">
         <h1>Eliminación de Cuenta</h1>
-        <p>Lamentamos que quieras irte. En <strong>BeerDex</strong> respetamos tu privacidad y el control sobre tus datos.</p>
+        <p>En <strong>BeerDex</strong> respetamos tu privacidad. Si deseas eliminar tu perfil y todos tus registros personales, por favor sigue las instrucciones a continuación.</p>
         
-        <p>Para solicitar la eliminación definitiva de tu cuenta y todos los datos asociados, por favor envía un correo electrónico a:</p>
+        <p>Envía un correo electrónico a nuestra dirección de soporte:</p>
         
         <div class="email-box">
             josue.hedez.19@gmail.com
         </div>
 
         <div class="steps">
-            <h3>Proceso de eliminación:</h3>
+            <h3>Instrucciones para la solicitud:</h3>
             <ul>
-                <li>Envía el correo desde la dirección vinculada a tu cuenta de BeerDex.</li>
-                <li>Incluye en el asunto: "Solicitud de eliminación de cuenta - BeerDex".</li>
-                <li>Una vez recibida la solicitud, procederemos a borrar tu información en un plazo máximo de 7 días hábiles.</li>
+                <li>Usa como asunto del mensaje: <span class="important">"Solicitud de eliminación de cuenta - BeerDex"</span>.</li>
+                <li>Es indispensable que <span class="important">adjuntes o menciones el correo electrónico ligado a la cuenta</span> con la que ingresaste a la aplicación.</li>
+                <li>Una vez recibida la información, verificaremos tu identidad y procederemos al borrado definitivo en un plazo máximo de 7 días hábiles.</li>
             </ul>
         </div>
 
-        <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 20px;">
-            Nota: Esta acción es irreversible. Se eliminarán tus registros de favoritos, notas de cata y configuraciones personalizadas.
+        <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 25px;">
+            Al completar este proceso, se eliminarán permanentemente tus favoritos, notas de cata y configuraciones. Esta acción no se puede deshacer.
         </p>
 
         <a href="https://ches019.github.io/BeerDex.privacypolicy/" class="back-link">← Volver al inicio</a>
