@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeerDex - Guía BJCP 2021</title>
+    <style>
+        :root {
+            --gold: #d4a017;
+            --dark-blue: #0f172a;
+            --light-gray: #f1f5f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--dark-blue);
+            color: var(--light-gray);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header {
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .links-section {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(212, 160, 23, 0.1);
+        }
+        .card h3 {
+            color: var(--gold);
+            margin-top: 0;
+        }
+        footer {
+            margin-top: 100px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+        }
+        .btn-privacy {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--gold);
+            color: var(--dark-blue);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>BEERDEX</h1>
+            <p class="tagline">La enciclopedia definitiva de estilos BJCP 2021 en tu bolsillo.</p>
+        </header>
+
+        <section class="links-section">
+            <a href="PrivacyPolicy.html" class="card">
+                <h3>Política de Privacidad</h3>
+                <p>Consulta cómo protegemos tus datos y qué información manejamos en la App.</p>
+            </a>
+            <a href="terms.html" class="card">
+                <h3>Términos del Servicio</h3>
+                <p>Reglas de uso y responsabilidades sobre la información técnica proporcionada.</p>
+            </a>
+        </section>
+
+        <section style="margin-top: 60px;">
+            <h2>Sobre el Proyecto</h2>
+            <p>BeerDex es una aplicación diseñada para entusiastas y jueces, traduciendo y organizando la base de datos completa de estilos de cerveza, sidra e hidromiel al español.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 BeerDex App. Desarrollado con pasión por el craft.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
