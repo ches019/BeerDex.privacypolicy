@@ -16,66 +16,74 @@
             margin: 0;
             background-color: var(--dark-blue);
             color: var(--light-gray);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             max-width: 900px;
             margin: auto;
             padding: 40px 20px;
             text-align: center;
+            flex: 1;
         }
         header {
             padding: 60px 0;
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: var(--gold);
             margin-bottom: 10px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            font-weight: 800;
         }
         .tagline {
             font-size: 1.2rem;
             opacity: 0.8;
+            max-width: 600px;
+            margin: auto;
         }
         .links-section {
             margin-top: 50px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid rgba(212, 160, 23, 0.3);
-            transition: transform 0.3s ease;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 35px;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 160, 23, 0.2);
+            transition: all 0.3s ease;
             text-decoration: none;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .card:hover {
-            transform: translateY(-5px);
-            background: rgba(212, 160, 23, 0.1);
+            transform: translateY(-8px);
+            background: rgba(212, 160, 23, 0.08);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
         .card h3 {
             color: var(--gold);
             margin-top: 0;
+            font-size: 1.4rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            opacity: 0.7;
+            margin-bottom: 0;
         }
         footer {
-            margin-top: 100px;
-            font-size: 0.9rem;
-            opacity: 0.6;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-        }
-        .btn-privacy {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: var(--gold);
-            color: var(--dark-blue);
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
         }
     </style>
 </head>
@@ -84,27 +92,28 @@
     <div class="container">
         <header>
             <h1>BEERDEX</h1>
-            <p class="tagline">La enciclopedia definitiva de estilos BJCP 2021 en tu bolsillo.</p>
+            <p class="tagline">La herramienta esencial para el estudio y consulta de estilos de cerveza, sidra e hidromiel.</p>
         </header>
 
         <section class="links-section">
-            <a href="PrivacyPolicy.html" class="card">
-                <h3>Política de Privacidad</h3>
-                <p>Consulta cómo protegemos tus datos y qué información manejamos en la App.</p>
+            <a href="https://ches019.github.io/BeerDex.privacypolicy/" class="card">
+                <h3>Políticas y Privacidad</h3>
+                <p>Información detallada sobre el tratamiento de datos y seguridad de la aplicación.</p>
             </a>
-            <a href="terms.html" class="card">
-                <h3>Términos del Servicio</h3>
-                <p>Reglas de uso y responsabilidades sobre la información técnica proporcionada.</p>
+
+            <a href="https://ches019.github.io/BeerDex.privacypolicy/terms" class="card">
+                <h3>Condiciones del Servicio</h3>
+                <p>Términos legales, responsabilidades y reglas de uso de la plataforma BeerDex.</p>
             </a>
         </section>
 
-        <section style="margin-top: 60px;">
-            <h2>Sobre el Proyecto</h2>
-            <p>BeerDex es una aplicación diseñada para entusiastas y jueces, traduciendo y organizando la base de datos completa de estilos de cerveza, sidra e hidromiel al español.</p>
+        <section style="margin-top: 70px; max-width: 700px; margin-left: auto; margin-right: auto;">
+            <h2 style="color: var(--gold);">Explora el Universo BJCP</h2>
+            <p>BeerDex organiza la base de datos oficial 2021 para ofrecerte una experiencia de usuario fluida, rápida y totalmente en español. Ideal para jueces, homebrewers y entusiastas del craft.</p>
         </section>
 
         <footer>
-            <p>&copy; 2026 BeerDex App. Desarrollado con pasión por el craft.</p>
+            <p>&copy; 2026 BeerDex. Todos los derechos reservados. Desarrollado en México.</p>
         </footer>
     </div>
 
