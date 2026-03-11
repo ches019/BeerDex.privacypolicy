@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Cuenta - BeerDex</title>
+    <style>
+        :root {
+            --gold: #d4a017;
+            --dark-blue: #0f172a;
+            --light-gray: #f1f5f9;
+            --error-red: #ef4444;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--dark-blue);
+            color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            text-align: center;
+        }
+        h1 {
+            color: var(--error-red);
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .email-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: var(--gold);
+            border: 1px dashed var(--gold);
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .steps {
+            text-align: left;
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <h1>Eliminación de Cuenta</h1>
+        <p>Lamentamos que quieras irte. En <strong>BeerDex</strong> respetamos tu privacidad y el control sobre tus datos.</p>
+        
+        <p>Para solicitar la eliminación definitiva de tu cuenta y todos los datos asociados, por favor envía un correo electrónico a:</p>
+        
+        <div class="email-box">
+            josue.hedez.19@gmail.com
+        </div>
+
+        <div class="steps">
+            <h3>Proceso de eliminación:</h3>
+            <ul>
+                <li>Envía el correo desde la dirección vinculada a tu cuenta de BeerDex.</li>
+                <li>Incluye en el asunto: "Solicitud de eliminación de cuenta - BeerDex".</li>
+                <li>Una vez recibida la solicitud, procederemos a borrar tu información en un plazo máximo de 7 días hábiles.</li>
+            </ul>
+        </div>
+
+        <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 20px;">
+            Nota: Esta acción es irreversible. Se eliminarán tus registros de favoritos, notas de cata y configuraciones personalizadas.
+        </p>
+
+        <a href="https://ches019.github.io/BeerDex.privacypolicy/" class="back-link">← Volver al inicio</a>
+    </div>
+
+</body>
+</html>
